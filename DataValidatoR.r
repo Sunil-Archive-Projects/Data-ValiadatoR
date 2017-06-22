@@ -3,6 +3,7 @@ library(plyr)
 library(futile.logger)
 
 
+
 #create a log file with that particular date of run as filename
 logFile <-paste(Sys.Date(),".log")
 
