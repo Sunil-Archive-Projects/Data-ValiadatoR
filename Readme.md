@@ -24,10 +24,16 @@ Normally, the following fields will be out of sync between two datasets :
 
 Benchmarks:
 
-· Processes 220636 Rows with 47 columns of data (10.3 Million Cells of data) in Average of 1.52 seconds. [Best Case: 1.36 seconds, Worst Case: 2.20 seconds]
-· Standardizes the above mentioned dataset for comparison [in 1.77 seconds]
-· Finds duplicates in the Dataset and writes the duplicate records into a separate CSV [in 1.26 seconds]
-· Compares 2 such input CSV dataset and creates a report which shows the difference for each cells for the corresponding claim_uid [in claims concept] and writes this report as CSV [in 2.27 seconds]
-· Shows the count of differences, column wise, so that we know in which column, data comparison is failing the most
-· Very Easy to Automate as it is just a ~10KB script , and needs a 1 line of command in batch file[Windows] or shell script [Linux] which can be scheduled using Windows Task Scheduler or a CRON job respectively
-Writes a log for each day’s run with Benchmarking parameters as well of the script run, to keep track of each run 
+- Processes 220636 Rows with 47 columns of data (10.3 Million Cells of data) in Average of 1.52 seconds. [Best Case: 1.36 seconds, Worst Case: 2.20 seconds]
+
+- Standardizes the above mentioned dataset for comparison [in 1.77 seconds]
+
+- Finds duplicates in the Dataset and writes the duplicate records into a separate CSV [in 1.26 seconds]
+
+- Compares 2 such input CSV dataset and creates a report which shows the difference for each cells for the corresponding claim_uid [in claims concept] and writes this report as CSV [in 2.27 seconds]
+
+- Shows the count of differences, column wise, so that we know in which column, data comparison is failing the most
+
+- Very Easy to Automate as it is just a ~10KB script , and needs a 1 line of command in batch file[Windows] or shell script [Linux] which can be scheduled using Windows Task Scheduler or a CRON job respectively
+
+- Writes a log for each day’s run with Benchmarking parameters as well of the script run, to keep track of each run 
